@@ -16,7 +16,9 @@ section {
     background-repeat: no-repeat;
     /* position: absolute; */
     /* !warum muss man position:absolute benuten und ::before und ::after???-->hab ich jetzt nicht gebraucht */
-    background-position: 0 80px, 530px 160px;
+    /* background-position: 0 80px, 530px 160px; */
+    /* obere Zeile, die jetzt ausgeblendet ist, gibt die Position etwas passender an-hab da aber auch nur rumprobiert */
+    background-position: top left, bottom right;
 }
 
 div {
