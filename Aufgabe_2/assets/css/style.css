@@ -1,0 +1,59 @@
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+section h1::first-letter {
+    color: #00796B;
+    font-size: 3em;
+}
+
+section h1:hover::first-letter {
+    color: #4FC3F7;
+}
+
+section ul {
+    padding: 50px;
+}
+
+section ul li:nth-of-type(1), li:nth-of-type(2) {
+    text-decoration: line-through;
+}
+/* Müsste ich, um es komplett korrekt zu machen beim zweiten li aucgh section und ul davor schreiben? */
+
+section ul li:nth-of-type(1)::marker, li:nth-of-type(2)::marker {
+    content: url(../icons/check.png);
+}
+
+
+section ul li:nth-of-type(3), li:nth-of-type(4) {
+    background-color: #4FC3F7;
+    width: 50vw;
+}
+
+section ul li:nth-of-type(3)::marker, li:nth-of-type(4)::marker {
+    content: url(../icons/organize.png);
+}
+
+section ul li:nth-of-type(5), li:nth-of-type(6) {
+    text-decoration: underline;
+}
+
+section ul li:nth-of-type(5)::marker, li:nth-of-type(6)::marker {
+    content: url(../icons/doing.png);
+}
+
+section ul li:nth-of-type(5)::after, li:nth-of-type(6)::after {
+    content: url(../icons/dance.png);
+}
+
+/* !Wie bestimme ich Größe dieser Bilder? */

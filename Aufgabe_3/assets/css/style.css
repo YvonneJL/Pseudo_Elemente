@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+section {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/157/157247.png"), url("https://cdn-icons-png.flaticon.com/256/157/157248.png");
+    display: inline-block;
+    background-size: 10% 20%;
+    background-repeat: no-repeat;
+    /* position: absolute; */
+    /* !warum muss man position:absolute benuten und ::before und ::after???-->hab ich jetzt nicht gebraucht */
+    background-position: 0 80px, 530px 160px;
+}
+
+div {
+    margin: 100px;
+    width: 400px;
+    height: 120px;
+    font-size: 1.2rem;
+    /* background-color: antiquewhite; */
+    text-align: center;
+}
+
+
+
+p {
+    margin-bottom: 10px;
+}
+
+p::first-letter {
+    font-size: 24px;
+}
+
+div p span {
+    /* text-decoration: underline;   */
+    /* ! Sollte man nicht benutzen laut Aufgabe */
+    border-bottom: 1px solid black;
+}
+
+.box:hover {
+    border: 2px solid black;
+}
+
+.background:hover {
+    background-color: black;
+    color: white;
+}
